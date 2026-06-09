@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ChevronRight, AlertCircle, Stethoscope, BookOpen, Activity } from "lucide-react";
-import { getSystem, bodySystems } from "../data/body-systems";
+import { getSystem, bodySystems, type BodySystem } from "../data/body-systems";
 
 export const Route = createFileRoute("/systems/$slug")({
   loader: ({ params }) => {
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/systems/$slug")({
 });
 
 function SystemDetail() {
-  const { sys } = Route.useLoaderData();
+  const { sys } = Route.useLoaderData() as { sys: BodySystem };
   const idx = bodySystems.findIndex(s => s.slug === sys.slug);
   const next = bodySystems[(idx + 1) % bodySystems.length];
   const prev = bodySystems[(idx - 1 + bodySystems.length) % bodySystems.length];
