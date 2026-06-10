@@ -170,7 +170,7 @@ export const bodySystems: BodySystem[] = [
     slug: "digestive",
     arName: "الجهاز الهضمي",
     enName: "Digestive System",
-    icon: "🫃",
+    icon: "🍽️",
     color: "digestive",
     shortDescription: "يحوّل الطعام إلى مغذيات يمتصها الجسم لإنتاج الطاقة.",
     longDescription:
