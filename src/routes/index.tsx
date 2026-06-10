@@ -39,7 +39,7 @@ function Home() {
               <span className="text-2xl md:text-4xl text-foreground/80">للتمريض</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-7 max-w-xl">
-              منهج شامل ومبسّط لطلاب وطالبات التمريض — يعرض كل أجهزة الجسم بأسماء عربية وإنجليزية، مع رسوم تفاعلية وملاحظات تمريضية واختبارات لتثبيت المعلومات.
+              دليل مبسّط وشامل من إعداد منة مصطفي لمادة التشريح لطلاب وطالبات التمريض، يضم شرحًا لأجهزة جسم الإنسان ومكوناته الأساسية بطريقة سهلة ومنظمة.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link to="/systems" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-medical text-primary-foreground font-bold shadow-medical hover:opacity-95 transition">
