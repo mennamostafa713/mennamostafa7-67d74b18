@@ -5,6 +5,6 @@ export default defineConfig({
     server: { entry: "server" },
   },
   nitro: {
-    preset: "netlify",
+    // preset: "netlify", // Removed to support multi-host deployment
   },
 });
