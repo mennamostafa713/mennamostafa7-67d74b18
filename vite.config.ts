@@ -1,10 +1,12 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+const nitroPreset =
+  process.env.NITRO_PRESET ??
+  (process.env.VERCEL ? "vercel" : process.env.NETLIFY ? "netlify" : undefined);
+
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  nitro: {
-    // preset: "netlify", // Removed to support multi-host deployment
-  },
+  nitro: nitroPreset ? { preset: nitroPreset } : {},
 });
